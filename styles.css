@@ -1,4 +1,51 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+}
+
+.side-bar {
+    background-color: cornflowerblue;
+    grid-column: 1/2;
+    display: grid;
+    justify-items: evenly;
+    padding: 0.5rem;
+    font-size: 100%;
+}
+
+.side-bar-title-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.side-bar>ul,
+.side-bar>div {
+    list-style: none;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul>li {
+    justify-content: start;
+}
+
+ul img {
+    width: 25%;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem 0.3rem;
 }
