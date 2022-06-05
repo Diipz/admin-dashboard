@@ -2,11 +2,13 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 10fr;
 }
 
 .side-bar {
     background-color: cornflowerblue;
     grid-column: 1/2;
+    grid-row: 1/4;
     display: grid;
     justify-items: evenly;
     padding: 0.5rem;
@@ -48,4 +50,37 @@ ul img {
     display: flex;
     align-items: center;
     margin: 0.1rem 0.3rem;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: grey;
+    padding: 1rem 1.5rem;
+}
+
+.upper-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-header-left {
+    display: flex;
+    justify-content: start;
+    width: 20rem;
+}
+
+.upper-header-right {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+.search {
+    margin-right: 1rem;
+}
+
+p.company-name {
+    font-weight: bold;
 }
