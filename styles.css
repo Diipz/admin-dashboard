@@ -1,3 +1,7 @@
+* html {
+    box-sizing: border-box;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -85,6 +89,7 @@ ul img {
 
 p.company-name {
     font-weight: bold;
+
 }
 
 .header input {
@@ -123,7 +128,7 @@ p.company-name {
 }
 
 button {
-    background-color: lightskyblue;
+    background-color: rgb(82, 165, 216);
     color: white;
     border-radius: 20px;
     border: none;
@@ -135,4 +140,65 @@ button {
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: lightgrey;
+    display: grid;
+    grid-template: 0.5fr 3fr 3fr 3fr / 1.25fr 1.25fr 1fr;
+    gap: 0.5rem;
+}
+
+.your-projects {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 0.6rem;
+}
+
+.annoucements {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-left: 0.6rem;
+}
+
+.card-1 {
+    grid-area: 2/1/3/2;
+}
+
+.card-2 {
+    grid-area: 2/2/3/3;
+}
+
+.card-3 {
+    grid-area: 3/1/4/2;
+}
+
+.card-4 {
+    grid-area: 3/2/4/3
+}
+
+.card-5 {
+    grid-area: 4/1/5/2
+}
+
+.card-6 {
+    grid-area: 4/2/5/3
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+    background-color: white;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-left: 8px solid orange;
+    border-radius: 10px;
+}
+
+.card-icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-icon-container img {
+    margin: 0 5%;
 }
