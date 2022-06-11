@@ -248,6 +248,8 @@ button {
 
 .trending-feed-mini-container {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .trending-feed img {
