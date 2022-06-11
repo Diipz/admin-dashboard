@@ -27,6 +27,11 @@
 
 .logo {
     width: 25%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(352deg) brightness(108%) contrast(101%);
+}
+
+.icon-wrapper img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(352deg) brightness(108%) contrast(101%);
 }
 
 .side-bar>ul,
